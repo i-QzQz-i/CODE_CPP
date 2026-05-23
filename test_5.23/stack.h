@@ -24,7 +24,7 @@ namespace QzQz
 			return con.size();
 		}
 
-		bool empty()
+		bool empty() const
 		{
 			return con.empty();
 		}

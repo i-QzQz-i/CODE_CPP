@@ -24,12 +24,12 @@ namespace QzQz
 			return con.size();
 		}
 
-		bool empty()
+		bool empty() const
 		{
 			return con.empty();
 		}
 
-		T& top()
+		T& front()
 		{
 			return con.front();
 		}
@@ -53,14 +53,14 @@ namespace QzQz
 		qu.push(4);
 		qu.push(5);
 		std::cout << qu.size() << std::endl;
-		std::cout << qu.top() << std::endl;
+		std::cout << qu.front() << std::endl;
 
 		qu.pop();
-		std::cout << qu.top() << std::endl;
+		std::cout << qu.front() << std::endl;
 
 		while (!qu.empty())
 		{
-			std::cout << qu.top() << "  ";
+			std::cout << qu.front() << "  ";
 			qu.pop();
 		}
 		std::cout << std::endl;
@@ -77,7 +77,7 @@ namespace QzQz
 		qu1.push(3);
 		qu1.push(4);
 		qu1.push(5);
-		std::cout << qu1.top() << std::endl;
+		std::cout << qu1.front() << std::endl;
 		std::cout << qu1.size() << std::endl;
 
 		queue<int> qu2;
